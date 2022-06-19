@@ -259,6 +259,10 @@ body {
 
 /*HERO start */
 
+.hero-section {
+  padding: 200px 0;
+}
+
 .container.hero {
   text-align: center;
 }
@@ -287,15 +291,24 @@ body {
 /* TESTIMONIALS start*/
 .testimonials {
   display: flex;
+  margin-right: -30px;
 }
 
-.testimonials .item:not(:last-child) {
+.testimonial-item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.testimonial-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .section-subtitle.testimonial {
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+
+.testimonial-text {
+  line-height: 1.71;
 }
 
 /* TESTIMONIALS end*/
@@ -358,9 +371,6 @@ body {
 
 .footer {
   background-color: var(--footer-bg-color);
-}
-
-footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -389,7 +399,8 @@ footer > .container {
   letter-spacing: 0.03em;
 }
 
-.footer-contacts {
+.footer-contact {
+  display: block;
   color: var(--white-transparent-text-color);
 
   font-style: normal;
@@ -397,10 +408,10 @@ footer > .container {
   letter-spacing: 0.03em;
 }
 
-.footer-contacts a {
-  display: inline-block;
+.footer-contact:not(:last-child) {
   margin-bottom: 9px;
 }
+
 /* FOOTER  end */
 
 /* 
